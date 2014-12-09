@@ -1,0 +1,11 @@
+audio{
+    width:100%;
+    margin:auto;
+}
+#albumart{
+    margin:auto;
+    padding: 10px;
+}
+.responsive{
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+                Data Driven Music Player
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+<div class="row">
+    <div class="col-sm-5">
+        <div id="albumart"><img src="http://placehold.it/350x350&text=Album+Art" class="responsive" alt="album art"/></div>
+        <div id="player">
+            <audio controls>
+            <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+            <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+            <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
+            </audio>
+        </div>
+        <div id="tracklisting">
+            <ol class="lead">
+                <li>Track</li>
+                <li>Track</li>
+                <li>Track</li>
+                <li>Track</li>
+                <li>Track</li>
+                <li>Track</li>
+            </ol>
+        </div>
+
+    </div>
+    <div class="col-sm-7 well">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Album title</h3>
+            </div>
+            <div class="panel-body">
+                Artist and info
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Album title</h3>
+            </div>
+            <div class="panel-body">
+                Artist and info
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Album title</h3>
+            </div>
+            <div class="panel-body">
+                Artist and info
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Album title</h3>
+            </div>
+            <div class="panel-body">
+                Artist and info
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Album title</h3>
+            </div>
+            <div class="panel-body">
+                Artist and info
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
