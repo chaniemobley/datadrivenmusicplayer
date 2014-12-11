@@ -9,3 +9,7 @@ audio{
 .responsive{
     width: 100%;
 }
+
+#body{
+    background-color: #5842D4;
+}
