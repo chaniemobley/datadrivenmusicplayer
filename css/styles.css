@@ -1,13 +1,18 @@
-audio{
-    width:100%;
-    margin:auto;
+body {
+    color: #424243;
 }
-#albumart{
-    margin:auto;
-    padding: 10px;
+
+#player {
+    max-height: 300px;
+    background-color: #FDEF00;
 }
-.responsive{
+
+audio {
     width: 100%;
 }
 
+.navbar {
+    margin-bottom: 0px !important;
+    border-radius: 0 !important;
+}
 
