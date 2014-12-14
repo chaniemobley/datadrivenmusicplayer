@@ -1,3 +1,8 @@
+body{
+    background-color: #5842D4;
+}
+
+
 audio{
     width:100%;
     margin:auto;
@@ -10,6 +15,3 @@ audio{
     width: 100%;
 }
 
-#body{
-    background-color: #5842D4;
-}

@@ -1,0 +1,27 @@
+{
+    "album": [
+        {
+            "id": 1,
+            "title": "",
+            "author": "",
+            "date": "",
+            "genre": ""
+        },
+        {
+            "id": 6,
+            "title": "",
+            "author": "",
+            "date": "",
+            "genre": ""
+        },
+        {
+            "id": 3,
+            "title": "",
+            "author": "",
+            "date": "",
+            "genre": ""
+        }
+    ],
+    "genres": [ "comedy", "fantasy", "non-fiction"]
+
+}
