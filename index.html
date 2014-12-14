@@ -4,7 +4,7 @@
     <title>Music Player</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 
 </head>
 <body>
@@ -15,14 +15,36 @@
                 <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
                 Data Driven Music Player
             </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
         <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Music
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Songs</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">Genres</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
+    <!-- /.navbar-collapse -->
+</div>
     <!-- /.container-fluid -->
 </nav>
 <div class="jumbotron" id="player">
@@ -44,7 +66,8 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/handlebars/handlebars.js"></script>
 <script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap/js/collapse.js"></script>
 <script src="js/main.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
