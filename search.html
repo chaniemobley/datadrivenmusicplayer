@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Player</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var musicData;
+
+            //Get the JSON object with all of the data
+            $.ajax({
+                type: "GET",
+                url: "data.json",
+                dataType: "JSON",
+                success: function(data) {
+                    musicData = data.artists;
+                }
+            });
+
+            $("#songBody").on("click", ".songRow", function() {
+                window.location.href = "index.html?t=" + $(this).attr("data-track") + "&l=" +
+                        $(this).attr("data-album") + "&a=" + $(this).attr("data-artist");
+            });
+
+            $("#btnSearch").bind("click", function() {
+                var search = $("#search").val();
+
+                $("#songBody").html("");
+
+                var foundCount = 0;
+
+                for(var key in musicData) {
+                    for(var key2 in musicData[key].albums) {
+                        for (var key3 in musicData[key].albums[key2].tracks) {
+
+                            var myReg = new RegExp(search, "i");
+
+                            if(musicData[key].name.match(myReg) || musicData[key].albums[key2].name.match(myReg) ||
+                                    musicData[key].albums[key2].tracks[key3].name.match(myReg) ||
+                                    musicData[key].albums[key2].tracks[key3].genre.match(myReg)) {
+                                var tr = $("<tr class='songRow' data-track='" + key3 + "' data-album='" + key2 + "' data-artist='" + key + "'>");
+                                var td1 = $("<td>" + musicData[key].albums[key2].tracks[key3].name + "</td>");
+                                var td2 = $("<td>" + musicData[key].albums[key2].name + "</td>");
+                                var td3 = $("<td>" + musicData[key].name + "</td>");
+                                var td4 = $("<td>" + musicData[key].albums[key2].tracks[key3].genre + "</td>");
+
+                                $(tr).append(td1);
+                                $(tr).append(td2);
+                                $(tr).append(td3);
+                                $(tr).append(td4);
+
+                                $("#songBody").append(tr);
+
+                                foundCount++;
+                            }
+                        }
+                    }
+                }
+
+                if(foundCount == 0) {
+                    $("#songBody").html("<tr><td colspan='4'>No Matches Found...</td>");
+                }
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+<div id="page-wrapper">
+    <h1 id="title" class="h1"></h1>
+    <img id="artistImage" src="#"  style="width:400px;height:400px;vertical-align:top;margin:10px;display:none;" alt="Artist Image" />
+    <div id="songs">
+        <input type="text" id="search" class="input-sm" name="search" />
+        <input type="button" class="btn" value="Search" id="btnSearch" />
+        <table class="table-striped table-hover">
+
+            <tr>
+                <th>Song Name</th>
+                <th>Artist Name</th>
+                <th>Album Name</th>
+                <th>Genre</th>
+            </tr>
+
+        </table>
+    </div>
+</div>
+</body>
+</html>
