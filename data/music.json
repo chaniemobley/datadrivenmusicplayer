@@ -4,7 +4,6 @@
             "track": "It's A Hit",
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
-            "picture": "/pictures/AdventurousPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -12,7 +11,6 @@
             "track": "Does He Love You?",
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
-            "picture": "/pictures/AdventurousPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -20,7 +18,6 @@
             "track": "Portions For Foxes",
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
-            "picture": "/pictures/AdventurousPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -28,7 +25,6 @@
             "track": "Ripchord",
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
-            "picture": "/pictures/AdventurousPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -36,7 +32,6 @@
             "track": "I Never",
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
-            "picture": "/pictures/AdventurousPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -44,7 +39,6 @@
             "track": "The Absence of God",
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
-            "picture": "/pictures/AdventurousPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -52,7 +46,6 @@
             "track": "Silver Lining",
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
-            "picture": "/pictures/UnderPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -60,7 +53,6 @@
             "track": "Close Call",
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
-            "picture": "/pictures/UnderPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -68,7 +60,6 @@
             "track": "The Moneymaker",
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
-            "picture": "/pictures/UnderPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -76,7 +67,6 @@
             "track": "Breakin Up",
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
-            "picture": "/pictures/UnderPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -84,7 +74,6 @@
             "track": "Under the Blacklight",
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
-            "picture": "/pictures/UnderPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -92,7 +81,6 @@
             "track": "Dreamworld",
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
-            "picture": "/pictures/UnderPic.jpg",
             "source": "",
             "genre": "Indie" },
 
@@ -100,7 +88,6 @@
             "track": "You Give Good Love",
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
-            "picture": "/pictures/HoustonGHPic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -108,7 +95,6 @@
             "track": "Saving All My Love for You",
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
-            "picture": "/pictures/HoustonGHPic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -116,7 +102,6 @@
             "track": "Greatest Love of All",
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
-            "picture": "/pictures/HoustonGHPic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -124,7 +109,6 @@
             "track": "All at Once",
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
-            "picture": "/pictures/HoustonGHPic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -132,7 +116,6 @@
             "track": "If You Say My Eyes Are Beautiful",
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
-            "picture": "/pictures/HoustonGHPic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -140,7 +123,6 @@
             "track": "Didn't We Almost Have It All",
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
-            "picture": "/pictures/HoustonGHPic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -148,7 +130,6 @@
             "track": "Pusher Love Girl",
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
-            "picture": "/pictures/2020Pic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -156,7 +137,6 @@
             "track": "Suit & Tie featuring Jay-Z",
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
-            "picture": "/pictures/2020Pic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -164,7 +144,6 @@
             "track": "Don't Hold the Wall",
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
-            "picture": "/pictures/2020Pic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -172,7 +151,6 @@
             "track": "Strawberry Bubblegum",
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
-            "picture": "/pictures/2020Pic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -180,7 +158,6 @@
             "track": "Tunnel Vision",
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
-            "picture": "/pictures/2020Pic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -188,7 +165,6 @@
             "track": "Spaceship Coupe",
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
-            "picture": "/pictures/2020Pic.jpg",
             "source": "",
             "genre": "Pop" },
 
@@ -196,7 +172,6 @@
             "track": "Take Me to Church",
             "artist": "Hozier",
             "album": "Hozier",
-            "picture": "/pictures/HozierPic.jpg",
             "source": "",
             "genre": "Alternative" },
 
@@ -204,7 +179,6 @@
             "track": "Angel of Small Death and the Codeine Scene",
             "artist": "Hozier",
             "album": "Hozier",
-            "picture": "/pictures/HozierPic.jpg",
             "source": "",
             "genre": "Alternative" },
 
@@ -212,7 +186,6 @@
             "track": "Jackie and Wilson",
             "artist": "Hozier",
             "album": "Hozier",
-            "picture": "/pictures/HozierPic.jpg",
             "source": "",
             "genre": "Alternative" },
 
@@ -220,7 +193,6 @@
             "track": "Someone New",
             "artist": "Hozier",
             "album": "Hozier",
-            "picture": "/pictures/HozierPic.jpg",
             "source": "",
             "genre": "Alternative" },
 
@@ -228,7 +200,6 @@
             "track": "To Be Alone",
             "artist": "Hozier",
             "album": "Hozier",
-            "picture": "/pictures/HozierPic.jpg",
             "source": "",
             "genre": "Alternative" },
 
@@ -236,10 +207,35 @@
             "track": "From Eden",
             "artist": "Hozier",
             "album": "Hozier",
-            "picture": "/pictures/HozierPic.jpg",
             "source": "",
             "genre": "Alternative" }
     ],
 
-    "genres": ["Alternative", "Pop", "Indie" ]
+    "genres": ["Alternative", "Pop", "Indie" ],
+
+    "info": [
+        {   "id": 101,
+            "artist": "Hozier",
+            "picture": "/pictures/HozierPic.jpg",
+            "information": "A unique and intelligent singer, songwriter, and multi-instrumentalist who cites James Joyce's Portrait of an Artist as a Young Man, Leonard Cohen, John Lee Hooker, and community choral singing among his influences, Hozier (his stage and performing name) was born Andrew Hozier-Byrne on March 17, 1990 (which just so happened to be St. Patrick's Day) in Bray, County Wicklow, Ireland. The son of a local blues musician, he literally grew up with the blues being played all around him. He joined his first band when he was 15, gravitating toward R&B, soul, gospel, and, of course, blues. Hozier started studying for a degree in music at Trinity College Dublin, where he was involved with the Trinity Orchestra, but dropped out in his first year to record demos for Universal Music. From 2009 to 2012, he sang with Anúna, an Irish choral group, and toured internationally. He released a solo EP, Take Me to Church, in 2013, and when a video for the powerful title track, which directly addresses gay discrimination in Russia, went viral on YouTube and Reddit, Hozier found himself with an international audience. A second EP, From Eden, appeared in the spring of 2014 and in September of that year, Columbia released his eponymous debut album. ~ Steve Leggett, Rovi"
+        },
+
+        {   "id": 102,
+            "artist": "Justin Timberlake",
+            "picture": "/pictures/2020Pic.jpg",
+            "information": "Justin Timberlake may be the quintessential pop star of the new millennium, a star who jumped from platform to platform on his way to establishing himself as something bigger than a star: he was a self-sustained empire. Timberlake began his rise as a TV star, performing on The New Mickey Mouse Club as a child in the '90s, but he earned his superstardom as one of the frontmen for *NSYNC, the most popular boy band of the turn of the millennium. Justin stepped away from the band just as its popularity crested, releasing the sleek Justified in 2002, its hit singles "Cry Me a River" and "Rock Your Body" establishing him as a force outside the group, and he consolidated that success in 2006 with FutureSex/LoveSounds, the album that generated his biggest hit, "SexyBack." After reaching this pop peak, he decided to pursue other ventures, choosing to concentrate on acting and entrepreneurship. Recurring appearances on Saturday Night Live proved to be among the show's most popular spots and he received acclaim for his performance in the 2010 Oscar-winning film The Social Network. Additionally, Timberlake established his own fashion imprint and record label, opened several restaurants, and, in 2011, invested in MySpace."
+        },
+
+        {   "id": 103,
+            "artist": "Whitney Houston",
+            "picture": "/pictures/HoustonGHPic.jpg",
+            "information": "Whitney Houston was inarguably one of the biggest female pop stars of all time. Her accomplishments as a hitmaker were extraordinary; just to scratch the surface, she became the first artist ever to have seven consecutive singles hit number one, and her 1993 Dolly Parton cover "I Will Always Love You" became nothing less than the biggest hit single in rock history. Houston was able to handle big adult contemporary ballads, effervescent, stylish dance-pop, and slick urban contemporary soul with equal dexterity; the result was an across-the-board appeal that was matched by scant few artists of her era, and helped her become one of the first black artists to find success on MTV in Michael Jackson's wake. Like many of the original soul singers, Houston was trained in gospel before moving into secular music; over time, she developed a virtuosic singing style given over to swooping, flashy melodic embellishments. The shadow of Houston's prodigious technique still looms large over nearly every pop diva and smooth urban soul singer who has followed, and spawned a legion of imitators. "
+        },
+
+        {   "id": 104,
+            "artist": "Rilo Kiley",
+            "picture": "/pictures/UnderPic.jpg",
+            "information": "Rilo Kiley was an American indie rock band based in Los Angeles. Formed in 1998, the band currently consists of Jenny Lewis, Blake Sennett, Pierre de Reeder, and Jason Boesel. They currently have no plans to make further recordings. The group released their debut album Take-Offs and Landings under Seattle-based independent label Barsuk Records in 2001. Since then, they have released three additional studio albums and several EPs. In 2007, they were signed with major record label Warner Bros., and consequently made their major record label debut Under the Blacklight."
+        }
+    ]
 }
