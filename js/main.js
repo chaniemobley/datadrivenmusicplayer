@@ -24,12 +24,46 @@ $(document).ready(function () {
 
             //compile templates
             genreLinkTemplate = Handlebars.compile(templates.find("#genreLinks").html());
+            albumLinkTemplate = Handlebars.compile(templates.find("#albumHomeLinks").html() );
+            albumInfoTemplate = Handlebars.compile(templates.find("#albumInfo").html() );
 
             //store data
             music = data[0].music;
-
+            
+            //append starting state
             genreDiv.html(genreLinkTemplate(data[0].genres));
         });
+
+    $("#content").on("click", ".albumLink", function(){
+        //'this' is the thing that was clicked
+        //we can get anything with the data - on the
+        var albumId = $(this).data('id');
+        //get the album obj using underscore to find the right result
+        var albumInfo = _.findWhere(albums,{id: albumId});
+
+        console.log(albumInfo);
+        //using the template , add the album info Div
+        albumInfoDiv.html(albumInfoTemplate(albumInfo) );
+
+
+    });
+
+    //whenever a genre link is clicked
+    $("#container").on("click", ".genreLink", function(){
+        //this textual name we are looking for
+        var genreToFind = $(this).html();
+
+        //an object to hold the results
+        var results = {};
+
+        //put the results into the albums property of an object
+        results.albums = _.where(albums,{genre: genreToFind});
+
+        //use the home template to show our results
+        browseDiv.html(albumLinkTemplate( results) );
+
+    });
+    
     //search field
     $("#btnSearch").click(function(){
         var searchTerm = $("#textSearch").val();
@@ -38,10 +72,10 @@ $(document).ready(function () {
 
         //will only search title
         //will only search exact match names
-        results.books = _.filter(books, function(item){
+        results.album = _.filter(album, function(item){
             return (item.title.toUpperCase().indexOf(searchTerm.toUpperCase())!= -1);
         })
-        browseDiv.html(bookLinkTemplate(results));
+        browseDiv.html(albumLinkTemplate(results));
     })
 
 })
