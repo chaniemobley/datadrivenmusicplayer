@@ -30,5 +30,18 @@ $(document).ready(function () {
 
             genreDiv.html(genreLinkTemplate(data[0].genres));
         });
+    //search field
+    $("#btnSearch").click(function(){
+        var searchTerm = $("#textSearch").val();
+
+        var results = {};
+
+        //will only search title
+        //will only search exact match names
+        results.books = _.filter(books, function(item){
+            return (item.title.toUpperCase().indexOf(searchTerm.toUpperCase())!= -1);
+        })
+        browseDiv.html(bookLinkTemplate(results));
+    })
 
 })
