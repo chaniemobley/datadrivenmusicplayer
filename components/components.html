@@ -16,6 +16,23 @@
         </ul>
     </script>
 
+    <script id="artistLinks" type="text/x-handlebars-template">
+        <ul class="artist_list">
+            {{#each artist}}
+            <li class='artistLinks' data-id="{{this.id}}">{{this.title}}</li>
+            {{/each}}
+
+        </ul>
+    </script>
+
+    <script id="songsLinks" type="text/x-handlebars-template">
+        <ul class="songs_list">
+            {{#each song}}
+            <li class='songLinks' data-id="{{this.id}}">{{this.title}}</li>
+            {{/each}}
+        </ul>
+    </script>
+
     <script id="albumInfo" type="text/x-handlebars-template">
         <div>
             <div class="albumTrack">{{track}}</div>
