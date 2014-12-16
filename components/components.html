@@ -2,26 +2,8 @@
     <script id="genreLinks" type="text/x-handlebars-template">
         <ul class="genre_list">
             {{#each this}}
-            <li class="genreLinks">{{this}}</li>
+            <li class="genreLink">{{this}}</li>
             {{/each}}
         </ul>
-    </script>
-
-    <script id="albumHomeLinks" type="text/x-handlebars-template">
-        <ul class="album_list">
-            {{#each albums}}
-            <li class='albumLinks' data-id="{{this.id}}">{{this.title}}</li>
-            {{/each}}
-
-        </ul>
-    </script>
-
-    <script id="albumInfo" type="text/x-handlebars-template">
-        <div>
-            <div class="albumSong">{{song}}</div>
-            <div class="albumArtist">{{artist}}</div>
-            <div class="albumName">{{name}}</div>
-            <div class="albumGenre">{{genre}}</div>
-        </div>
     </script>
 </components>
