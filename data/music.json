@@ -5,6 +5,7 @@
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
             "picture": "/pictures/AdventurousPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 2,
@@ -12,6 +13,7 @@
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
             "picture": "/pictures/AdventurousPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 3,
@@ -19,6 +21,7 @@
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
             "picture": "/pictures/AdventurousPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 4,
@@ -26,6 +29,7 @@
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
             "picture": "/pictures/AdventurousPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 5,
@@ -33,6 +37,7 @@
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
             "picture": "/pictures/AdventurousPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 6,
@@ -40,6 +45,7 @@
             "artist": "Rilo Kiley",
             "album": "More Adventurous",
             "picture": "/pictures/AdventurousPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 7,
@@ -47,6 +53,7 @@
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
             "picture": "/pictures/UnderPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 8,
@@ -54,6 +61,7 @@
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
             "picture": "/pictures/UnderPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 9,
@@ -61,6 +69,7 @@
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
             "picture": "/pictures/UnderPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 10,
@@ -68,6 +77,7 @@
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
             "picture": "/pictures/UnderPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 11,
@@ -75,6 +85,7 @@
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
             "picture": "/pictures/UnderPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 12,
@@ -82,6 +93,7 @@
             "artist": "Rilo Kiley",
             "album": "Under The Blacklight",
             "picture": "/pictures/UnderPic.jpg",
+            "source": "",
             "genre": "Indie" },
 
         {   "id": 13,
@@ -89,6 +101,7 @@
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
             "picture": "/pictures/HoustonGHPic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 14,
@@ -96,6 +109,7 @@
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
             "picture": "/pictures/HoustonGHPic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 15,
@@ -103,6 +117,7 @@
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
             "picture": "/pictures/HoustonGHPic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 16,
@@ -110,6 +125,7 @@
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
             "picture": "/pictures/HoustonGHPic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 17,
@@ -117,6 +133,7 @@
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
             "picture": "/pictures/HoustonGHPic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 18,
@@ -124,6 +141,7 @@
             "artist": "Whitney Houston",
             "album": "Greatest Hits",
             "picture": "/pictures/HoustonGHPic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 19,
@@ -131,6 +149,7 @@
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
             "picture": "/pictures/2020Pic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 20,
@@ -138,6 +157,7 @@
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
             "picture": "/pictures/2020Pic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 21,
@@ -145,6 +165,7 @@
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
             "picture": "/pictures/2020Pic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 22,
@@ -152,6 +173,7 @@
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
             "picture": "/pictures/2020Pic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 23,
@@ -159,6 +181,7 @@
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
             "picture": "/pictures/2020Pic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 24,
@@ -166,6 +189,7 @@
             "artist": "Justin Timberlake",
             "album": "The 20/20 Experience",
             "picture": "/pictures/2020Pic.jpg",
+            "source": "",
             "genre": "Pop" },
 
         {   "id": 25,
@@ -173,6 +197,7 @@
             "artist": "Hozier",
             "album": "Hozier",
             "picture": "/pictures/HozierPic.jpg",
+            "source": "",
             "genre": "Alternative" },
 
         {   "id": 26,
@@ -180,6 +205,7 @@
             "artist": "Hozier",
             "album": "Hozier",
             "picture": "/pictures/HozierPic.jpg",
+            "source": "",
             "genre": "Alternative" },
 
         {   "id": 27,
@@ -187,6 +213,7 @@
             "artist": "Hozier",
             "album": "Hozier",
             "picture": "/pictures/HozierPic.jpg",
+            "source": "",
             "genre": "Alternative" },
 
         {   "id": 28,
@@ -194,6 +221,7 @@
             "artist": "Hozier",
             "album": "Hozier",
             "picture": "/pictures/HozierPic.jpg",
+            "source": "",
             "genre": "Alternative" },
 
         {   "id": 29,
@@ -201,6 +229,7 @@
             "artist": "Hozier",
             "album": "Hozier",
             "picture": "/pictures/HozierPic.jpg",
+            "source": "",
             "genre": "Alternative" },
 
         {   "id": 30,
@@ -208,6 +237,7 @@
             "artist": "Hozier",
             "album": "Hozier",
             "picture": "/pictures/HozierPic.jpg",
+            "source": "",
             "genre": "Alternative" }
     ],
 
