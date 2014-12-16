@@ -10,6 +10,7 @@ $(document).ready(function () {
     var genreDiv = $("#genres");
     var albumDiv = $("#albumInfo");
     var artistDiv = $("#artistInfo");
+    var myAudio = $("#myAudio");
 
     //
     //waits for all the functions in the argument list to finish before doing the 'done' half
