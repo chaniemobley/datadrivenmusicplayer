@@ -1,10 +1,10 @@
 body {
-    color: #ECD200;
+    color: #383417;
 }
 
 #player {
     max-height: 300px;
-    background-color: #0099cc;
+    background-color: #ECD200;
 }
 
 audio {
