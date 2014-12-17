@@ -26,6 +26,7 @@ $(document).ready(function () {
             genreLinkTemplate = Handlebars.compile(templates.find("#genreLinks").html());
             albumLinkTemplate = Handlebars.compile(templates.find("#albumHomeLinks").html() );
             albumInfoTemplate = Handlebars.compile(templates.find("#albumInfo").html() );
+            songLinksTemplate = Handlebars.compile(templates.find("#songsLinks").html());
 
             //store data
             music = data[0].music;
@@ -60,7 +61,7 @@ $(document).ready(function () {
         results.albums = _.where(albums,{genre: genreToFind});
 
         //use the home template to show our results
-        browseDiv.html(albumLinkTemplate( results) );
+        resultsDiv.html(albumLinkTemplate(results));
 
     });
     
@@ -72,10 +73,10 @@ $(document).ready(function () {
 
         //will only search title
         //will only search exact match names
-        results.album = _.filter(album, function(item){
+        results.music = _.filter(music, function (item) {
             return (item.title.toUpperCase().indexOf(searchTerm.toUpperCase())!= -1);
-        })
-        browseDiv.html(albumLinkTemplate(results));
+        });
+        resultsDiv.html(songLinksTemplate(results));
     })
 
 })
