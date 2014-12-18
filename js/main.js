@@ -1,6 +1,6 @@
 var music, artists, albums;
 //template variables go below
-var genreLinkTemplate, albumLinkTemplate, albumInfoTemplate, songLinksTemplate;
+var genreLinkTemplate, albumLinkTemplate, albumInfoTemplate, songLinksTemplate, audioTemplate;
 
 $(document).ready(function () {
     //get references to dom elements
@@ -9,7 +9,8 @@ $(document).ready(function () {
     var genreDiv = $("#genres");
     var albumDiv = $("#albumInfo");
     var artistDiv = $("#artistInfo");
-    var myAudio = $("#myAudio");
+    var nav = $("#navbar-collapse");
+    var myAudio = document.querySelector("#myAudio");
 
     //
     //waits for all the functions in the argument list to finish before doing the 'done' half
@@ -26,37 +27,41 @@ $(document).ready(function () {
             albumLinkTemplate = Handlebars.compile(templates.find("#albumHomeLinks").html() );
             albumInfoTemplate = Handlebars.compile(templates.find("#albumInfo").html() );
             songLinksTemplate = Handlebars.compile(templates.find("#songLinks").html());
+            audioTemplate = Handlebars.compile(templates.find("#audioSource").html());
 
             //store data
             music = data[0].music;
             
             //append starting state
+            $("#controls").append(audioTemplate(data[0]));
             //contentDiv.html(songLinksTemplate(data[0]));
-            $("#navbar-collapse").on("click", "#songsnav", function () {
+            $(nav).on("click", "#songsnav", function () {
                 contentDiv.html(songLinksTemplate(data[0]));
+
+
             });
-            $("#navbar-collapse").on("click", "#genresNav", function () {
+            $(nav).on("click", "#genresNav", function () {
                 genreDiv.html(genreLinkTemplate(data[0].genres));
             });
-            $("#navbar-collapse").on("click", "#albumsnav", function () {
+            $(nav).on("click", "#albumsnav", function () {
                 genreDiv.html(albumLinkTemplate(data[0]));
             });
         });
 
-
-    /*$(contentDiv).on("click", ".albumLink", function () {
-     //'this' is the thing that was clicked
-        //we can get anything with the data - on the
-        var albumId = $(this).data('id');
+    //myAudio.src = $("#myaudiosrc");
+    $(contentDiv).on("click", ".songLinks", function () {
+        //'this' is the thing that was clicked
+        //we can get anything with the data
+        var songId = $(this).data('id');
         //get the album obj using underscore to find the right result
-        var albumInfo = _.findWhere(albums,{id: albumId});
+        var songPlay = _.findWhere(albums, {id: songId});
 
-        console.log(albumInfo);
+        console.log(myAudio.src);
         //using the template , add the album info Div
-     albumDiv.html(albumInfoTemplate(albumInfo) );
+//     albumDiv.html(albumInfoTemplate(albumInfo) );
 
 
-     });*/
+    });
 
     //whenever a genre link is clicked
     /* $("#container").on("click", ".genreLink", function(){

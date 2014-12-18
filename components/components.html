@@ -29,6 +29,7 @@
         <ul class="songs_list">
             {{#each music}}
             <li class='songLinks' data-id="{{this.id}}">{{this.track}} by {{this.artist}}</li>
+
             {{/each}}
         </ul>
     </script>
@@ -40,4 +41,11 @@
             <div class="albumName">{{album}}</div>
         </div>
     </script>
+
+    <script id="audioSource" type="text/x-handlebars-template">
+        {{#each music}}
+        <source id="myaudiosrc" src="data/mp3/{{this.source}}.mp3" type="audio/wav"/>
+        {{/each}}
+    </script>
+
 </components>

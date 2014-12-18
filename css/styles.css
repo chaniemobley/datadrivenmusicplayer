@@ -16,3 +16,7 @@ audio {
     border-radius: 0 !important;
 }
 
+.songs_list {
+    list-style: none;
+    font-size: 16px;
+}
