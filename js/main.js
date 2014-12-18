@@ -1,7 +1,7 @@
 var music;
 var artists;
 //template variables go below
-var genreLinkTemplate;
+var genreLinkTemplate, albumLinkTemplate, albumInfoTemplate, songLinksTemplate;
 
 $(document).ready(function () {
     //get references to dom elements
@@ -26,16 +26,16 @@ $(document).ready(function () {
             genreLinkTemplate = Handlebars.compile(templates.find("#genreLinks").html());
             albumLinkTemplate = Handlebars.compile(templates.find("#albumHomeLinks").html() );
             albumInfoTemplate = Handlebars.compile(templates.find("#albumInfo").html() );
-            songLinksTemplate = Handlebars.compile(templates.find("#songsLinks").html());
+            songLinksTemplate = Handlebars.compile(templates.find("#songLinks").html());
 
             //store data
             music = data[0].music;
             
             //append starting state
-            genreDiv.html(genreLinkTemplate(data[0].genres));
+            contentDiv.html(songLinksTemplate(data[0].genres));
         });
 
-    $("#content").on("click", ".albumLink", function(){
+    $(contentDiv).on("click", ".albumLink", function () {
         //'this' is the thing that was clicked
         //we can get anything with the data - on the
         var albumId = $(this).data('id');
@@ -77,6 +77,7 @@ $(document).ready(function () {
             return (item.title.toUpperCase().indexOf(searchTerm.toUpperCase())!= -1);
         });
         resultsDiv.html(songLinksTemplate(results));
+
     })
 
 })
