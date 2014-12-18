@@ -1,97 +1,77 @@
-var music, artists, albums;
-//template variables go below
-var genreLinkTemplate, albumLinkTemplate, albumInfoTemplate, songLinksTemplate, audioTemplate;
+var songs;
+var show;
+var playPause = $("#playPause");
+var play = $("#play");
+var pause = $("#pause");
+var back = $("#back");
+var forw = $("#forward");
+var res = $("#resultsArea");
 
 $(document).ready(function () {
-    //get references to dom elements
-    var contentDiv = $("#content");
-    var resultsDiv = $("#searchResults");
-    var genreDiv = $("#genres");
-    var albumDiv = $("#albumInfo");
-    var artistDiv = $("#artistInfo");
-    var nav = $("#navbar-collapse");
-    var myAudio = document.querySelector("#myAudio");
 
-    //
-    //waits for all the functions in the argument list to finish before doing the 'done' half
-    $.when(
-            $.ajax("components/components.html"), //load in our component data
-            $.getJSON("data/music.json") //load in our data data
-        ).done(function (templateData, data) {
+    $.getJSON("json/data.json", function (data) {
+        console.log(data);
 
-            //wrap the template content in the jquery object
-            var templates = $(templateData[0]);
+        songs = data.music;
 
-            //compile templates
-            genreLinkTemplate = Handlebars.compile(templates.find("#genreLinks").html());
-            albumLinkTemplate = Handlebars.compile(templates.find("#albumHomeLinks").html() );
-            albumInfoTemplate = Handlebars.compile(templates.find("#albumInfo").html() );
-            songLinksTemplate = Handlebars.compile(templates.find("#songLinks").html());
-            audioTemplate = Handlebars.compile(templates.find("#audioSource").html());
+        for (var i = 0; i < data.music.length; i++) {
+            $("#listAll").append("<ul> <li data-index='" + i + "'><h2>" + data.music[i].track + "</h2></li>" + "<ul><li data-index='" + i + "'><h3>" + data.music[i].artist + "</h3></li></ul>" + "<ul id='descHide'><li data-index='" + i + "'>" + data.music[i].Album + "</li>" + "<li data-index='" + i + "'>" + data.music[i].Date + "</li>" + "<li data-index='" + i + "'>" + data.music[i].Desc + "</li>" + "<li data-index='" + i + "'>" + data.music[i].Genre + "</li>" + "<li data-index='" + i + "'>" + data.music[i].Pic + "</li></ul>" + "</ul>");
+        }
 
-            //store data
-            music = data[0].music;
-            
-            //append starting state
-            $("#controls").append(audioTemplate(data[0]));
-            //contentDiv.html(songLinksTemplate(data[0]));
-            $(nav).on("click", "#songsnav", function () {
-                contentDiv.html(songLinksTemplate(data[0]));
+        $("li").click(function () {
+
+            var clickedItem = $(this);
+
+            var index = clickedItem.data("index");
+            var song = songs[index];
+//console.log(song);
+
+            $("#descArea").html("<div id='desc'>" + song.Pic + "<h2>" + song.Title + "</h2>" + "<p>" + song.Artist + " " + song.Album + " " + song.Date + " " + song.Genre + "</p>" + "<p>" + song.Desc + "</p>" + "</div>");
 
 
+            var myAudio = document.querySelector("#audio");
+            myAudio.src = song.Song;
+            myAudio.addEventListener('canplay', function (event) {
+                myAudio.play();
             });
-            $(nav).on("click", "#genresNav", function () {
-                genreDiv.html(genreLinkTemplate(data[0].genres));
+            myAudio.load();
+
+            playPause.click(function () {
+                if (myAudio.paused == false) {
+                    myAudio.pause();
+                    if ((pause).hasClass('pauseOn')) {
+                        (pause).removeClass('pauseOn').addClass('pauseOff');
+                        (play).removeClass('playOff').addClass('playOn');
+                    }
+
+                } else {
+                    myAudio.play();
+                    if ((play).hasClass('playOn')) {
+                        (play).removeClass('playOn').addClass('playOff');
+                        (pause).removeClass('pauseOff').addClass('pauseOn');
+                    }
+                }
             });
-            $(nav).on("click", "#albumsnav", function () {
-                genreDiv.html(albumLinkTemplate(data[0]));
+
+            back.click(function () {
+                index--;
+                song = songs[index];
+                myAudio.src = song.Song;
+                $("#descArea").html("<div id='desc'>" + song.Pic + "<h2>" + song.Title + "</h2>" + "<p>" + song.Artist + " " + song.Album + " " + song.Date + " " + song.Genre + "</p>" + "<p>" + song.Desc + "</p>" + "</div>");
             });
+
+            forw.click(function () {
+                index++;
+                song = songs[index];
+                myAudio.src = song.Song;
+                $("#descArea").html("<div id='desc'>" + song.Pic + "<h2>" + song.Title + "</h2>" + "<p>" + song.Artist + " " + song.Album + " " + song.Date + " " + song.Genre + "</p>" + "<p>" + song.Desc + "</p>" + "</div>");
+            });
+
+
         });
 
-    //myAudio.src = $("#myaudiosrc");
-    $(contentDiv).on("click", ".songLinks", function () {
-        //'this' is the thing that was clicked
-        //we can get anything with the data
-        var songId = $(this).data('id');
-        //get the album obj using underscore to find the right result
-        var songPlay = _.findWhere(albums, {id: songId});
 
-        console.log(myAudio.src);
-        //using the template , add the album info Div
-//     albumDiv.html(albumInfoTemplate(albumInfo) );
+    })
 
 
-    });
-
-    //whenever a genre link is clicked
-    /* $("#container").on("click", ".genreLink", function(){
-     //this textual name we are looking for
-        var genreToFind = $(this).html();
-
-        //an object to hold the results
-        var results = {};
-
-        //put the results into the albums property of an object
-        results.albums = _.where(albums,{genre: genreToFind});
-
-        //use the home template to show our results
-        resultsDiv.html(albumLinkTemplate(results));
-
-     });*/
-
-    //search field
-    /*$("#btnSearch").click(function(){
-     var searchTerm = $("#textSearch").val();
-
-        var results = {};
-
-        //will only search title
-        //will only search exact match names
-        results.music = _.filter(music, function (item) {
-            return (item.title.toUpperCase().indexOf(searchTerm.toUpperCase())!= -1);
-        });
-        resultsDiv.html(songLinksTemplate(results));
-
-     })*/
-
-})
+});
