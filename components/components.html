@@ -9,8 +9,8 @@
 
     <script id="albumHomeLinks" type="text/x-handlebars-template">
         <ul class="album_list">
-            {{#each albums}}
-            <li class='albumLinks' data-id="{{this.id}}">{{this.title}}</li>
+            {{#each music}}
+            <li class='albumLinks' data-id="{{this.id}}">{{this.album}}</li>
             {{/each}}
 
         </ul>
@@ -18,8 +18,8 @@
 
     <script id="artistLinks" type="text/x-handlebars-template">
         <ul class="artist_list">
-            {{#each artist}}
-            <li class='artistLinks' data-id="{{this.id}}">{{this.title}}</li>
+            {{#each music}}
+            <li class='artistLinks' data-id="{{this.id}}">{{this.artist}}</li>
             {{/each}}
 
         </ul>
@@ -28,7 +28,7 @@
     <script id="songLinks" type="text/x-handlebars-template">
         <ul class="songs_list">
             {{#each music}}
-            <li class='songLinks' data-id="{{this.id}}">{{this.track}}</li>
+            <li class='songLinks' data-id="{{this.id}}">{{this.track}} by {{this.artist}}</li>
             {{/each}}
         </ul>
     </script>
