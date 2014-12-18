@@ -1,6 +1,4 @@
-var music;
-var artists;
-
+var music, artists, albums;
 //template variables go below
 var genreLinkTemplate, albumLinkTemplate, albumInfoTemplate, songLinksTemplate;
 
@@ -33,8 +31,18 @@ $(document).ready(function () {
             music = data[0].music;
             
             //append starting state
-            contentDiv.html(songLinksTemplate(data[0].genres));
+            //contentDiv.html(songLinksTemplate(data[0]));
+            $("#navbar-collapse").on("click", "#songsnav", function () {
+                contentDiv.html(songLinksTemplate(data[0]));
+            });
+            $("#navbar-collapse").on("click", "#genresNav", function () {
+                genreDiv.html(genreLinkTemplate(data[0].genres));
+            });
+            $("#navbar-collapse").on("click", "#albumsnav", function () {
+                genreDiv.html(albumLinkTemplate(data[0]));
+            });
         });
+
 
     /*$(contentDiv).on("click", ".albumLink", function () {
      //'this' is the thing that was clicked
