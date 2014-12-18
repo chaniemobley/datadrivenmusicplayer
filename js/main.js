@@ -35,8 +35,8 @@ $(document).ready(function () {
             contentDiv.html(songLinksTemplate(data[0].genres));
         });
 
-    $(contentDiv).on("click", ".albumLink", function () {
-        //'this' is the thing that was clicked
+    /*$(contentDiv).on("click", ".albumLink", function () {
+     //'this' is the thing that was clicked
         //we can get anything with the data - on the
         var albumId = $(this).data('id');
         //get the album obj using underscore to find the right result
@@ -44,14 +44,14 @@ $(document).ready(function () {
 
         console.log(albumInfo);
         //using the template , add the album info Div
-        albumInfoDiv.html(albumInfoTemplate(albumInfo) );
+     albumDiv.html(albumInfoTemplate(albumInfo) );
 
 
-    });
+     });*/
 
     //whenever a genre link is clicked
-    $("#container").on("click", ".genreLink", function(){
-        //this textual name we are looking for
+    /* $("#container").on("click", ".genreLink", function(){
+     //this textual name we are looking for
         var genreToFind = $(this).html();
 
         //an object to hold the results
@@ -63,11 +63,11 @@ $(document).ready(function () {
         //use the home template to show our results
         resultsDiv.html(albumLinkTemplate(results));
 
-    });
-    
+     });*/
+
     //search field
-    $("#btnSearch").click(function(){
-        var searchTerm = $("#textSearch").val();
+    /*$("#btnSearch").click(function(){
+     var searchTerm = $("#textSearch").val();
 
         var results = {};
 
@@ -78,6 +78,6 @@ $(document).ready(function () {
         });
         resultsDiv.html(songLinksTemplate(results));
 
-    })
+     })*/
 
 })
