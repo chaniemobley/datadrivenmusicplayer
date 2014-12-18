@@ -1,4 +1,6 @@
-var music, artists, albums;
+var music;
+var artists;
+
 //template variables go below
 var genreLinkTemplate, albumLinkTemplate, albumInfoTemplate, songLinksTemplate;
 
@@ -31,7 +33,7 @@ $(document).ready(function () {
             music = data[0].music;
             
             //append starting state
-            contentDiv.html(songLinksTemplate(data[0].track));
+            contentDiv.html(songLinksTemplate(data[0].genres));
         });
 
     /*$(contentDiv).on("click", ".albumLink", function () {
