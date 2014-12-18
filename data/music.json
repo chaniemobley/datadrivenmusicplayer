@@ -201,15 +201,32 @@
             "artist": "Hozier",
             "album": "Hozier",
             "source": "data/mp3/CherryWine.mp3",
-            "genre": "Alternative" },
+            "genre": "Alternative"
+        },
 
-        {   "id": 30,
+        {
+            "id": 30,
             "track": "From Eden",
             "artist": "Hozier",
             "album": "Hozier",
             "source": "data/mp3/FromEden.mp3",
-            "genre": "Alternative" }
-    ],
+            "genre": "Alternative",
+            "picture": "/data/pictures/HozierPic.jpg",
+            "information": "A unique and intelligent singer, songwriter,",
+            " and multi-instrumentalist who cites James Joyce's Portrait of an Artist as a Young Man, Leonard Cohen, John Lee Hooker, and community choral singing among his influences, "
+            "Hozier (his stage and performing name) was born Andrew Hozier-Byrne on March 17, 1990 (which just so happened to be St. Patrick's Day) in Bray, County Wicklow, Ireland. "
+            "The son of a local blues musician,he literally grew up with the blues being played all around him. He joined his first band when he was 15, gravitating toward R&B, soul, gospel, and,"
+            " of course, blues. Hozier started studying for a degree in music at Trinity College Dublin,"
+            " where he was involved with the Trinity Orchestra, but dropped out in his first year to record demos for Universal Music. "
+            "From 2009 to 2012, he sang with Anúna, an Irish choral group, and toured internationally. He released a solo EP, Take Me to Church,"
+            "in 2013, and when a video for the powerful title track, which directly addresses gay discrimination in Russia, "
+            "went viral on YouTube and Reddit, Hozier found himself with an international audience. A second EP, From Eden, "
+            "appeared in the spring of 2014 and in September of that year, Columbia released his eponymous debut album."
+            ],
+
+
+
+
 
     "genres": ["Alternative", "Pop", "Indie"],
 
