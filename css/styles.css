@@ -16,7 +16,8 @@ audio {
     border-radius: 0 !important;
 }
 
-.songs_list {
+#songs li {
     list-style: none;
     font-size: 16px;
+    cursor: pointer;
 }
