@@ -16,14 +16,81 @@ audio {
     border-radius: 0 !important;
 }
 
+.results {
+    display: none;
+}
+
+.results.active {
+    display: block;
+}
+
+.results .data {
+    margin: 0;
+    padding: 0;
+}
+
+.results .data li {
+    border-bottom: 1px solid #eee;
+    display: block;
+    padding: 10px;
+}
+
+.results .data.expanded > li {
+    padding: 20px 10px;
+}
+
+.results .data li img {
+    width: 100%;
+}
+
+.results .data li h3 {
+    margin: 0 10px 20px;
+}
+
+.results .data li .side h3 {
+    margin: 0 0 20px;
+}
+
+.results .data li ul {
+    margin: 0;
+    padding: 0;
+}
+
+.results .data li ul li {
+}
+
+.results .data li ul li:last-child {
+    border-bottom: none;
+}
+
+.results .data li.song {
+    cursor: pointer;
+}
+
+.results .data li.song:hover {
+    background: #f9f9f9;
+}
+
+.results .data li.song.playing {
+    background: #f2f2f2;
+}
+
 #songs li {
     list-style: none;
     font-size: 16px;
     cursor: pointer;
+    border-bottom: 1px solid #eee;
 }
 
 #albums li {
     list-style: none;
     font-size: 16px;
     cursor: pointer;
+}
+
+footer {
+    padding: 30px;
+    background-color: #222222;
+    color: #ffffff;
+    margin-top: 40px;
 }
